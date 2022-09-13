@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * main - Print "main" followed by a new line.
+ * main - Print "_putchar" followed by a new line.
  *
  * Description: You are not allowed to use the standard library.
  * Return: 0
  */
 int main(void)
 {
-	char main[] = "main";
+	char main[] = "_putchar";
 	int i = 0;
 
 	while (main[i] != '\0')
