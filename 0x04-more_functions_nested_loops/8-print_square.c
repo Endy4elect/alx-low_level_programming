@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "nain.h"
+#include "main.h"
 
 /**
  * print_square - prints squares
