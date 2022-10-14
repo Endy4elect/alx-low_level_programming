@@ -8,7 +8,7 @@
  * Return: void
  */
 
-void print_c(va_list list)
+void print_c(va_list c)
 {
 	printf("%c", va_arg(c, int));
 }
@@ -19,7 +19,7 @@ void print_c(va_list list)
  * Return: void
  */
 
-void print_i(va_list list)
+void print_i(va_list i)
 {
 	printf("%d", va_arg(i, int));
 }
@@ -30,7 +30,7 @@ void print_i(va_list list)
  * Return: void
  */
 
-void print_f(va_list list)
+void print_f(va_list f)
 {
 	printf("%f", va_arg(f, double));
 }
@@ -41,7 +41,7 @@ void print_f(va_list list)
  * Return: void
  */
 
-void print_s(va_list list)
+void print_s(va_list s)
 {
 	char *str = va_arg(s, char *);
 
@@ -80,7 +80,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				p[j].f(valist);
-				separator = ", ";
+				separator = ",";
 				break;
 			}
 			j++;
