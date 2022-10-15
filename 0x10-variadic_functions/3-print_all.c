@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
+#include <stdarg.h>
 #include <stdio.h>
 
 /**
@@ -74,7 +75,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", sep);
 				printType[j].printer(list);
-				sep = ",";
+				sep = ", ";
 				break;
 			}
 			j++;
